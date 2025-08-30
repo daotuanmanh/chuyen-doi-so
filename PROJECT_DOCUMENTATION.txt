@@ -1,0 +1,449 @@
+🚀 SALES ANALYTICS DASHBOARD - TÀI LIỆU DỰ ÁN
+================================================
+
+📊 TỔNG QUAN DỰ ÁN
+==================
+
+Hệ thống báo cáo doanh thu thông minh với AI phân tích, biểu đồ tương tác và đề xuất chiến lược kinh doanh.
+
+🎯 TÍNH NĂNG CHÍNH
+==================
+
+📈 Dashboard Web Tương tác
+- Biểu đồ tương tác: Zoom, hover, filter theo thời gian thực
+- Lọc linh hoạt: Tuần/Tháng/Quý + Chi nhánh
+- AI Phân tích: Tự động phân tích và đề xuất
+- Responsive: Tương thích mọi thiết bị
+
+🤖 AI Analytics
+- Phân tích xu hướng: Phát hiện pattern doanh thu
+- Đề xuất thông minh: Gợi ý cải thiện hiệu quả
+- Cảnh báo rủi ro: Alert khi có vấn đề
+- Top performer: Xác định chi nhánh/kênh tốt nhất
+
+📊 Báo cáo Tĩnh
+- Biểu đồ chuyên nghiệp: Matplotlib + Seaborn
+- 9 loại biểu đồ: Bar, Pie, Line, Heatmap, Box plot
+- AI Insights: Phân tích chi tiết bằng text
+- Export PNG: Chất lượng cao cho báo cáo
+
+🛠️ CÔNG NGHỆ SỬ DỤNG
+====================
+
+Frontend
+- Next.js 14: React framework
+- TypeScript: Type safety
+- TailwindCSS: Styling
+- Recharts: Biểu đồ tương tác
+- Plotly.js: Biểu đồ nâng cao
+
+Backend
+- Next.js API Routes: Serverless functions
+- Pandas: Xử lý dữ liệu Excel
+- Matplotlib/Seaborn: Vẽ biểu đồ tĩnh
+- Plotly: Biểu đồ tương tác Python
+
+AI & Analytics
+- Scikit-learn: Machine Learning
+- NumPy/SciPy: Tính toán khoa học
+- Custom AI Logic: Phân tích thông minh
+
+📁 CẤU TRÚC DỰ ÁN
+=================
+
+Hoa/
+├── app/
+│   ├── api/
+│   │   ├── sales-dashboard/route.ts
+│   │   ├── sales-comparison/route.ts
+│   │   ├── sales-report/route.ts
+│   │   └── detailed-reports/route.ts
+│   ├── comparison/page.tsx
+│   ├── reports/page.tsx
+│   ├── settings/page.tsx
+│   ├── about/page.tsx
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── SalesDashboard.tsx
+│   ├── ComparisonDashboard.tsx
+│   ├── DetailedReports.tsx
+│   ├── Settings.tsx
+│   ├── Navigation.tsx
+│   └── ThemeToggle.tsx
+├── utils/
+│   ├── excel-analyzer.ts
+│   ├── exportUtils.ts
+│   ├── alertSystem.ts
+│   ├── dateTimeUtils.ts
+│   ├── insights-schema.ts
+│   └── json-cleaner.ts
+├── contexts/
+│   └── SettingsContext.tsx
+├── start.bat
+├── clean.bat
+└── README.txt
+
+🚀 CÁC TRANG ĐÃ HOÀN THÀNH
+==========================
+
+1. Dashboard Chính (/)
+- ✅ Báo cáo tổng quan doanh thu
+- ✅ Biểu đồ tương tác (Bar, Pie, Line, Radar, Area, Composed)
+- ✅ AI Insights thông minh
+- ✅ Bộ lọc theo thời gian, chi nhánh, năm
+- ✅ Xuất báo cáo PNG/PDF/Excel
+- ✅ Hệ thống cảnh báo thông minh
+
+2. Comparison Dashboard (/comparison)
+- ✅ So sánh hiệu suất giữa các giai đoạn
+- ✅ So sánh chi nhánh và kênh
+- ✅ Biểu đồ so sánh doanh thu, ROI, chi phí
+- ✅ Phân tích AI về tăng trưởng
+- ✅ Bộ lọc động theo loại so sánh
+
+3. Detailed Reports (/reports)
+- ✅ 4 loại báo cáo: Toàn diện, Tài chính, Vận hành, Tùy chỉnh
+- ✅ Custom Report Settings: Cài đặt tùy chỉnh báo cáo
+- ✅ Detailed Metrics: Chỉ số chi tiết
+- ✅ Financial Metrics: Chỉ số tài chính
+- ✅ Operational Metrics: Chỉ số vận hành
+- ✅ Branch Analysis Chart: Biểu đồ phân tích chi nhánh
+- ✅ Channel Analysis Chart: Biểu đồ phân tích kênh
+- ✅ Trends Analysis Chart: Biểu đồ xu hướng
+- ✅ AI Insights có điều kiện theo loại báo cáo
+- ✅ Xuất PDF/Excel
+
+4. Settings (/settings)
+- ✅ Cài đặt người dùng (theme, ngôn ngữ, múi giờ, tiền tệ)
+- ✅ Cấu hình dashboard (refresh interval, default filters)
+- ✅ Cài đặt cảnh báo và thông báo
+- ✅ Cài đặt xuất báo cáo nâng cao
+- ✅ Settings Context: Quản lý settings toàn cục
+- ✅ LocalStorage: Lưu trữ settings
+- ✅ Giao diện tabbed navigation
+- ✅ Dark Mode hoàn thiện
+
+5. About (/about)
+- ✅ Giới thiệu dự án
+- ✅ Giải thích thuật ngữ (ROI, Growth, Performance)
+- ✅ Chính sách bảo mật
+- ✅ Điều khoản sử dụng
+- ✅ Chính sách dữ liệu
+- ✅ Chính sách cảnh báo
+- ✅ Hỗ trợ & Liên hệ
+
+📊 BIỂU ĐỒ ĐÃ THÊM
+==================
+
+1. Biểu đồ Radar - So sánh Hiệu suất Chi nhánh
+- Mục đích: So sánh đa chiều hiệu suất các chi nhánh
+- Dữ liệu: Doanh thu, ROI, Hiệu suất, Tăng trưởng, Chi phí
+- Tính năng: 3 trục so sánh, tooltip chi tiết, legend rõ ràng
+
+2. Biểu đồ Area - Xu hướng Doanh thu & Dự báo
+- Mục đích: Hiển thị xu hướng và dự báo doanh thu
+- Dữ liệu: Doanh thu thực tế, Dự kiến tăng 10%, Mục tiêu tăng 20%
+- Tính năng: Stacked area chart, 3 lớp dữ liệu, gradient màu sắc
+
+3. Biểu đồ Combo - Doanh thu & ROI theo Chi nhánh
+- Mục đích: Kết hợp bar chart và line chart
+- Dữ liệu: Doanh thu (bar), ROI (line), Lợi nhuận (bar)
+- Tính năng: 2 trục Y độc lập, tooltip thông minh
+
+🚨 HỆ THỐNG CẢNH BÁO
+====================
+
+Cách hoạt động:
+1. Khi vào Dashboard: Hệ thống tự động kiểm tra dữ liệu
+2. So sánh với ngưỡng trong cài đặt
+3. Hiển thị cảnh báo nếu có vấn đề
+
+Các loại cảnh báo:
+- Doanh thu thấp: Khi tổng doanh thu < ngưỡng
+- ROI thấp: Khi ROI trung bình < ngưỡng
+- Chi nhánh có vấn đề: Khi doanh thu/ROI < 50% ngưỡng
+- Tăng trưởng âm: Khi có chi nhánh giảm doanh thu
+
+Cách gửi cảnh báo:
+- In-app: Toast notification ngay lập tức
+- Email: Gửi email (giả lập)
+- Push: Push notification (giả lập)
+
+⚙️ HỆ THỐNG CÀI ĐẶT
+====================
+
+Múi giờ (Timezone)
+- 20+ múi giờ phổ biến: Việt Nam, Singapore, Nhật Bản, Mỹ, Châu Âu, Úc
+- Hiển thị thời gian hiện tại: Real-time preview theo múi giờ đã chọn
+- Tự động detect: Lấy múi giờ hệ thống làm mặc định
+- Validation: Kiểm tra tính hợp lệ của múi giờ
+
+Định dạng ngày (Date Format)
+- 10+ định dạng phổ biến: DD/MM/YYYY, MM/DD/YYYY, YYYY-MM-DD
+- Preview trực quan: Hiển thị ví dụ theo định dạng đã chọn
+- Hỗ trợ đầy đủ: Ngày, tháng, năm, giờ, phút, giây
+
+Tiền tệ (Currency)
+- 16+ loại tiền tệ: VND, USD, EUR, GBP, JPY, KRW, CNY
+- Khu vực châu Á: Đầy đủ các nước Đông Nam Á
+- Định dạng chuẩn: Theo locale và currency code
+
+📤 CHỨC NĂNG XUẤT BÁO CÁO
+==========================
+
+Hỗ trợ 3 định dạng:
+- PNG: Hình ảnh chất lượng cao
+- PDF: Tài liệu PDF có thể in
+- Excel: Dữ liệu có thể chỉnh sửa
+
+Cài đặt xuất báo cáo:
+- Định dạng mặc định (PNG/PDF/Excel)
+- Chất lượng xuất (Thấp/Trung bình/Cao)
+- Mẫu tên file tùy chỉnh
+- Mức độ nén
+- Nội dung xuất (biểu đồ, insights, watermark)
+- Tự động lưu
+
+🔧 API ENDPOINTS
+================
+
+1. /api/sales-dashboard
+- Lọc dữ liệu theo thời gian, chi nhánh, năm
+- Tính toán tổng hợp và phân tích
+- AI Insights thông minh
+
+2. /api/sales-comparison
+- So sánh dữ liệu theo loại (period, branch, channel)
+- Phân tích tăng trưởng và xu hướng
+- Comparison Insights
+
+3. /api/detailed-reports
+- Báo cáo chi tiết với các loại khác nhau
+- Detailed metrics calculation
+- Branch, channel, weekly analysis
+- Detailed AI Insights
+
+🎨 UI/UX FEATURES
+=================
+
+Design System
+- Glass morphism design
+- Gradient backgrounds
+- Responsive layouts
+- Interactive charts với tooltips
+- Loading states và error handling
+- Consistent color scheme
+
+Components
+- Reusable chart components
+- Form controls với validation
+- Modal dialogs
+- Tabbed interfaces
+- Card layouts
+
+📊 DATA VISUALIZATION
+====================
+
+Chart Types
+- Bar Charts (doanh thu, ROI)
+- Pie Charts (phân bố kênh)
+- Line Charts (xu hướng)
+- Area Charts (tích lũy)
+- Radar Charts (so sánh đa chiều)
+- Composed Charts (mixed data)
+
+Interactive Features
+- Tooltips với formatting
+- Responsive containers
+- Custom colors và gradients
+- Legend và labels
+
+🤖 AI FEATURES
+==============
+
+Analytics
+- Dynamic threshold calculation
+- Percentile/ranking analysis
+- Trend detection
+- Risk assessment
+- Performance metrics
+
+Insights Generation
+- Context-aware recommendations (theo loại báo cáo)
+- Top performer analysis
+- Risk warnings (phân tích rủi ro chi tiết)
+- Strategic suggestions (đề xuất chiến lược)
+- Trend analysis
+- Financial insights (cho báo cáo tài chính)
+- Operational insights (cho báo cáo vận hành)
+
+🚀 CÀI ĐẶT & CHẠY
+==================
+
+1. Cài đặt dependencies
+```bash
+# JavaScript/React
+npm install
+
+# Python
+pip install -r requirements.txt
+```
+
+2. Chạy Dashboard Web
+```bash
+npm run dev
+```
+Truy cập: http://localhost:3000
+
+3. Sử dụng Scripts (Chỉ 2 file)
+```bash
+# Khởi động ứng dụng
+start.bat
+
+# Dọn dẹp cache khi gặp lỗi
+clean.bat
+```
+
+📊 CÁCH SỬ DỤNG DASHBOARD
+=========================
+
+1. Lọc dữ liệu
+- Loại thời gian: Chọn Tuần/Tháng/Quý
+- Giá trị: Chọn tuần cụ thể (1-52), tháng (1-12), quý (Q1-Q4)
+- Chi nhánh: Tất cả hoặc từng chi nhánh riêng
+- Năm: 2025
+
+2. Xem biểu đồ
+- Doanh thu theo Chi nhánh: Biểu đồ cột
+- Phân bổ theo Kênh: Biểu đồ tròn
+- Xu hướng theo Tuần: Biểu đồ đường
+- So sánh Hiệu suất Chi nhánh: Biểu đồ radar
+- Xu hướng Doanh thu & Dự báo: Biểu đồ area
+- Doanh thu & ROI theo Chi nhánh: Biểu đồ combo
+- AI Phân tích: Dưới mỗi biểu đồ
+
+3. AI Insights
+- Đề xuất: Cải thiện hiệu quả
+- Cảnh báo: Rủi ro cần lưu ý
+- Xu hướng: Phân tích trend
+
+📈 DỮ LIỆU ĐẦU VÀO
+==================
+
+Cấu trúc Excel
+- quarter: Quý (Q1, Q2, Q3, Q4)
+- year: Năm (2025)
+- week: Tuần (1-52)
+- week_start_date: Ngày bắt đầu tuần
+- channel: Kênh (Shopee, Lazada, Tiki)
+- branch: Chi nhánh (Hà Nội, Hồ Chí Minh, Đà Nẵng)
+- total_revenue: Tổng doanh thu
+- ad_cost: Chi phí quảng cáo
+- roi: Tỷ lệ hoàn vốn
+
+File dữ liệu
+- sales_Q1_2025_with_branch.xlsx
+- sales_Q2_2025_with_branch.xlsx
+- sales_Q3_2025_with_branch.xlsx
+- sales_Q4_2025_with_branch.xlsx
+
+🎯 TÍNH NĂNG AI
+===============
+
+1. Phân tích tự động
+- Top performer: Chi nhánh/kênh dẫn đầu
+- ROI analysis: Hiệu quả quảng cáo
+- Trend detection: Xu hướng doanh thu
+- Anomaly detection: Phát hiện bất thường
+
+2. Đề xuất thông minh
+- Cải thiện ROI: Tối ưu chi phí quảng cáo
+- Chiến lược kênh: Phân bổ ngân sách
+- Tập trung chi nhánh: Ưu tiên đầu tư
+- Cảnh báo rủi ro: Alert sớm
+
+3. Báo cáo tự động
+- Weekly report: Báo cáo hàng tuần
+- Monthly summary: Tổng kết tháng
+- Quarterly analysis: Phân tích quý
+- Yearly overview: Tổng quan năm
+
+📊 OUTPUT FILES
+===============
+
+Dashboard Web
+- Real-time: Cập nhật theo thời gian thực
+- Interactive: Tương tác với biểu đồ
+- Responsive: Tương thích mobile
+
+Báo cáo Tĩnh
+- PNG files: bao_cao_doanh_thu_Q1_2025.png
+- AI insights: ai_insights_Q1_2025.txt
+- High quality: 300 DPI cho in ấn
+
+🔧 TÙY CHỈNH
+============
+
+Thêm dữ liệu mới
+1. Thêm file Excel vào thư mục gốc
+2. Cập nhật excel-analyzer.ts
+3. Chạy lại dashboard
+
+Tùy chỉnh biểu đồ
+- Colors: Thay đổi màu sắc
+- Layout: Điều chỉnh bố cục
+- Charts: Thêm/bớt loại biểu đồ
+
+AI Logic
+- Thresholds: Điều chỉnh ngưỡng cảnh báo
+- Algorithms: Thay đổi thuật toán phân tích
+- Insights: Tùy chỉnh nội dung đề xuất
+
+📞 HỖ TRỢ
+==========
+
+Lỗi thường gặp
+1. Module not found: Chạy npm install hoặc pip install -r requirements.txt
+2. Excel read error: Kiểm tra định dạng file Excel
+3. Chart not loading: Kiểm tra dữ liệu và API
+4. Port 3000 đã được sử dụng: Tắt ứng dụng khác hoặc thay đổi port
+5. Dependencies lỗi: Chạy clean.bat để dọn dẹp
+6. Node.js không tìm thấy: Cài đặt Node.js từ https://nodejs.org/
+7. Build lỗi: Chạy clean.bat để dọn dẹp cache
+
+Performance
+- Large datasets: Sử dụng pagination
+- Real-time updates: WebSocket cho dữ liệu live
+- Caching: Redis cho tối ưu tốc độ
+
+🎉 KẾT QUẢ
+==========
+
+Dashboard Web
+✅ Tương tác: Filter linh hoạt theo tuần/tháng/quý
+✅ Biểu đồ: 7 loại biểu đồ chính
+✅ AI Insights: Phân tích tự động
+✅ Responsive: Mobile-friendly
+✅ Alert System: Cảnh báo thông minh
+✅ Export: PNG/PDF/Excel
+✅ Settings: Cài đặt toàn diện
+✅ Dark Mode: Hỗ trợ theme sáng/tối
+
+Báo cáo Tĩnh
+✅ 9 biểu đồ: Comprehensive analysis
+✅ AI Insights: Detailed recommendations
+✅ High quality: Print-ready PNG files
+✅ Automated: One-click generation
+
+---
+
+🎯 MỤC TIÊU: Cung cấp insights thông minh để ra quyết định kinh doanh hiệu quả!
+
+🤖 AI-POWERED: Phân tích tự động, đề xuất thông minh, cảnh báo sớm!
+
+🚀 QUẢN LÝ ĐƠN GIẢN: Chỉ cần 2 file batch để vận hành toàn bộ hệ thống!
+
+📅 Ngày hoàn thành: 2025
+🏷️ Version: 2.0.0
+✅ Status: Hoàn thành 100%
